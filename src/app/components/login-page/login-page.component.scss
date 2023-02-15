@@ -80,7 +80,7 @@ nav {
     height: 600px;
     // transform: rotate(45deg);
     background: linear-gradient(to top, #f4f4f4 0%, #f6c9bf 100%);
-    clip-path: polygon(0% -30%, 0% 100%, 100% 100%);
+    clip-path: polygon(0% -29.5%, 0% 100%, 100% 100%);
     // transform: rotate(90deg);
 }
 
@@ -178,12 +178,12 @@ input {
     }
 
     .mid {
-        width: 60%;
+        width: 55%;
         padding: 5px;
     }
 
     .last {
-        width: 15%;
+        width: 20%;
         padding: 5px;
     }
 
@@ -209,14 +209,19 @@ input {
     }
 
     .medium2 {
-        // background: linear-gradient(-105deg, #f4f4f4 79%, #f6c9bf 79%);
-        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
     }
 
     .mediumsub {
-        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         background-color: white;
-        height: 300px;
+        height: 250px;
     }
 
     .mediumforform {
@@ -235,7 +240,7 @@ input {
         // display: flex;
         // justify-content: center;
         // background-color: white;
-        // margin: 40px 100px;
+        
         height: 150px;
 
         // width: 50%;
@@ -248,6 +253,7 @@ input {
     .mediumforpic img {
         height: 150px;
         text-align: center;
+        margin: 5px;
 
         // background-color: #f84a32;
         // box-shadow: 10px 10px #888888;
@@ -259,14 +265,16 @@ input {
         font-size: 10px;
         padding: 5px;
     }
-
-    label {
-        margin-top: 5px;
+    form{
+        font-size: 8px;
     }
+
+    
 
     input {
         margin: 5px 0px;
-        padding-left: 1em;
+        font-size: 8px;
+        // padding-left: 10px;
     }
 
     .footer {
@@ -294,10 +302,10 @@ input {
         position: absolute;
         // margin-top: 100px;
         width: 50vw;
-        height: 400px;
+        height: 350px;
         // transform: rotate(45deg);
         background: linear-gradient(to top, #f4f4f4 0%, #f6c9bf 100%);
-        clip-path: polygon(0% -35%, 0% 100%, 100% 100%);
+        clip-path: polygon(0% -10%, 0% 100%, 100% 100%);
         // transform: rotate(90deg);
     }
 
