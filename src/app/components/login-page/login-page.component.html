@@ -1,4 +1,4 @@
-<nav >
+<nav>
     <div class="row">
         <div class="imag col-md-2">
             <img src="../../../favicon.ico" alt="logo">
@@ -39,8 +39,9 @@
                     <button class="fbtn btn btn-primary">Login</button>
                 </form>
             </div>
-            <div class="mediumforpic col-md-5">
-                <img src="../../../assets/2.jpg" width="100%" >
+
+            <div *ngIf="val=='Desktop'" class="mediumforpic col-md-5">
+                <img  src="../../../assets/2.jpg" width="100%">
             </div>
 
         </div>

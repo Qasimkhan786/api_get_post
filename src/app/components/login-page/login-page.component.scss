@@ -170,7 +170,7 @@ input {
     padding-right: 2em;
 }
 
-@media screen and (max-width:800px) {
+@media only screen and (max-width:620px) {
 
     .imag {
         width: 25%;
@@ -196,10 +196,9 @@ input {
 
     .lastbtn {
         border: 0;
-        border-radius: 15px;
         padding: 5px 10px;
         margin-left: 6px;
-        font-size: 15px;
+        font-size: 9px;
 
         background-color: #ee4931;
     }
@@ -211,15 +210,11 @@ input {
     .medium2 {
         display: flex;
         justify-content: center;
-        align-items: center;
         height: 350px;
     }
 
     .mediumsub {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+        width: 60%;
         background-color: white;
         height: 250px;
     }
@@ -235,34 +230,8 @@ input {
         // width: 50%;
         font-size: 10px;
     }
-
-    .mediumforpic {
-        // display: flex;
-        // justify-content: center;
-        // background-color: white;
-        
-        height: 150px;
-
-        // width: 50%;
-        // background-color: #f84a32;
-        // box-shadow: 10px 10px #888888;
-
-
-    }
-
-    .mediumforpic img {
-        height: 150px;
-        text-align: center;
-        margin: 5px;
-
-        // background-color: #f84a32;
-        // box-shadow: 10px 10px #888888;
-
-
-    }
-
-    .btn {
-        font-size: 10px;
+    .fbtn {
+        font-size: 9px;
         padding: 5px;
     }
     form{
@@ -305,7 +274,7 @@ input {
         height: 350px;
         // transform: rotate(45deg);
         background: linear-gradient(to top, #f4f4f4 0%, #f6c9bf 100%);
-        clip-path: polygon(0% -10%, 0% 100%, 100% 100%);
+        clip-path: polygon(0% -75%, 0% 100%, 100% 100%);
         // transform: rotate(90deg);
     }
 
