@@ -3,24 +3,16 @@
 nav {
 
     background-color: black;
-    width: 100%;
+    // width: 100%;
 
 }
 
-nav img {
-    padding: 5px 0px;
-}
 
-.display {
-    display: inline-block;
-    margin: 0;
-}
+
 
 .imag {
     text-align: center;
     display: inline-block;
-    width: 20%;
-    margin: 0%;
     padding: 20px 0px;
     border-right: 1px solid whitesmoke;
 
@@ -28,8 +20,7 @@ nav img {
 
 .mid {
     text-align: right;
-    width: 60%;
-    margin: 0%;
+    padding-top: 22px;
 
 
 
@@ -37,38 +28,40 @@ nav img {
 
 .last {
     // text-align: center;
-    width: 17%;
+    // width: 17%;
     padding: 20px 0px;
     border-left: 1px solid whitesmoke;
 }
 
 .lastbtn {
     border: 0;
-    border-radius: 15px;
-    padding: 10px 50px;
+    padding: 5px 50px;
     color: white;
     margin-left: 20px;
-    
-    background-color: #ee4931;
+    background: linear-gradient(to right, #ee4931 0%, #c06922 100%);
+    // background-color: #ee4931;
 }
-.lastbtn:hover{
-    background-color: white;
+
+.lastbtn:hover {
+    background: linear-gradient(to right, #c06922 0%, #ee4931 100%);
     color: black;
 }
+
 .midbtn {
     border: 0;
     color: #ee4931;
     background-color: black;
-    padding-right: 20px;
 }
-.midbtn:hover{
+
+.midbtn:hover {
     color: white;
 }
+
 .medium1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    // padding: 0%;
+    width: 100%;
     color: white;
     background-color: rgb(36, 32, 32);
 
@@ -76,54 +69,59 @@ nav img {
 
 .medium1 h1 {
     margin: 0%;
-    padding: 20px;
+    padding: 20px 30px;
     border-bottom: 2px solid #ee4931;
 }
 
-.medium2{
+.clip {
+    position: absolute;
+    // margin-top: 100px;
+    width: 50vw;
+    height: 600px;
+    // transform: rotate(45deg);
+    background: linear-gradient(to top, #f4f4f4 0%, #f6c9bf 100%);
+    clip-path: polygon(0% -30%, 0% 100%, 100% 100%);
+    // transform: rotate(90deg);
+}
+
+.medium2 {
     // border: 1px solid;
     display: flex;
+    // margin-left: 100px;
     justify-content: center;
     // text-align: center;
     align-items: center;
-    height: 500px;
-    background: linear-gradient(-110deg, #f4f4f4 79%, #f6c9bf 79%);
+    height: 600px;
+    // clip-path: polygon(0 0, 100% 100%, 0 100%);
+    background-color: #f4f4f4;
     margin: 0%;
-    padding: 0% ;
+    padding: 0%;
 }
 
 .mediumsub {
     display: flex;
-    justify-content: center;
-    margin: 0%;
-    padding: 0 ;
+    margin-left: 11%;
+    padding: 0%;
+    align-items: center;
     // text-align: center;
     // text-align: center;
     // padding: 100px; 
     background-color: white;
-    height: 300px;
+    height: 400px;
 }
 
 .mediumforform {
     display: flex;
     justify-content: center;
-    // text-align: center;
-    // margin: 5% 0;
-    // background-color: white;
     height: 300px;
-    // width: 800px;
-    // width: 50%;
 }
 
-.mediumforpic {
-    display: flex;
-    justify-content: center;
-    // background-color: white;
-    // margin: 40px 100px;
-    height: 250px;
-    // width: 50%;
-    background-color: #f84a32;
-    box-shadow: 10px 10px #888888;
+.mediumforpic img {
+    height: 350px;
+    text-align: center;
+
+    // background-color: #f84a32;
+    // box-shadow: 10px 10px #888888;
 
 
 }
@@ -146,16 +144,162 @@ footer h3 {
     text-align: center;
     bottom: 0;
 }
-.btn{
+
+.fbtn {
     width: 100%;
-    padding: 10px;
-    background-color: #ee4931;
+    // padding: 9px;
+    background: linear-gradient(to right, #ee4931 0%, #c06922 100%);
     color: white;
+    border: 0;
 }
-label{
+
+.fbtn:hover {
+
+    background: linear-gradient(to right, #c06922 0%, #ee4931 100%);
+    color: black;
+
+}
+
+label {
     margin-top: 10px;
 }
-input{
+
+input {
     margin: 10px 0px;
-    padding: 0px 2em;
+    // padding: 0px 2em;
+    padding-right: 2em;
+}
+
+@media screen and (max-width:800px) {
+
+    .imag {
+        width: 25%;
+        padding: 5px;
+    }
+
+    .mid {
+        width: 60%;
+        padding: 5px;
+    }
+
+    .last {
+        width: 15%;
+        padding: 5px;
+    }
+
+    .midbtn {
+        border: 0;
+        color: #ee4931;
+        font-size: 12px;
+        background-color: black;
+    }
+
+    .lastbtn {
+        border: 0;
+        border-radius: 15px;
+        padding: 5px 10px;
+        margin-left: 6px;
+        font-size: 15px;
+
+        background-color: #ee4931;
+    }
+
+    .medium1 h1 {
+        font-size: 15px;
+    }
+
+    .medium2 {
+        // background: linear-gradient(-105deg, #f4f4f4 79%, #f6c9bf 79%);
+        height: 400px;
+    }
+
+    .mediumsub {
+        width: 80%;
+        background-color: white;
+        height: 300px;
+    }
+
+    .mediumforform {
+        // display: flex;
+        // justify-content: center;
+        // text-align: center;
+        // margin: 5% 0;
+        // background-color: white;
+        height: 150px;
+        // width: 40%;
+        // width: 50%;
+        font-size: 10px;
+    }
+
+    .mediumforpic {
+        // display: flex;
+        // justify-content: center;
+        // background-color: white;
+        // margin: 40px 100px;
+        height: 150px;
+
+        // width: 50%;
+        // background-color: #f84a32;
+        // box-shadow: 10px 10px #888888;
+
+
+    }
+
+    .mediumforpic img {
+        height: 150px;
+        text-align: center;
+
+        // background-color: #f84a32;
+        // box-shadow: 10px 10px #888888;
+
+
+    }
+
+    .btn {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    label {
+        margin-top: 5px;
+    }
+
+    input {
+        margin: 5px 0px;
+        padding-left: 1em;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        bottom: 0;
+        font-size: 10px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+    }
+
+    footer h3 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        bottom: 0;
+        font-size: 13px;
+    }
+
+    .clip {
+        position: absolute;
+        // margin-top: 100px;
+        width: 50vw;
+        height: 400px;
+        // transform: rotate(45deg);
+        background: linear-gradient(to top, #f4f4f4 0%, #f6c9bf 100%);
+        clip-path: polygon(0% -35%, 0% 100%, 100% 100%);
+        // transform: rotate(90deg);
+    }
+
+
 }
