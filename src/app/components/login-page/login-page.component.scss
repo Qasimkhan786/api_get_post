@@ -1,7 +1,11 @@
 @import "../../../styles.scss";
 
-nav {
+.margin-0{
+margin: 0px;
+}
 
+nav {
+    margin: 0%;
     background-color: black;
     // width: 100%;
 
@@ -14,6 +18,7 @@ nav {
     text-align: center;
     display: inline-block;
     padding: 20px 0px;
+    padding-left: 10px;
     border-right: 1px solid whitesmoke;
 
 }
@@ -80,7 +85,7 @@ nav {
     height: 600px;
     // transform: rotate(45deg);
     background: linear-gradient(to top, #f4f4f4 0%, #f6c9bf 100%);
-    clip-path: polygon(0% -29.5%, 0% 100%, 100% 100%);
+    clip-path: polygon(0% -6%, 0% 100%, 100% 100%);
     // transform: rotate(90deg);
 }
 
@@ -88,7 +93,7 @@ nav {
     // border: 1px solid;
     display: flex;
     // margin-left: 100px;
-    justify-content: center;
+    // justify-content: center;
     // text-align: center;
     align-items: center;
     height: 600px;
@@ -125,25 +130,14 @@ nav {
 
 
 }
-
-.footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    bottom: 0;
-}
-
 footer {
     background-color: black;
     color: white;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 }
 
-footer h3 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    bottom: 0;
-}
 
 .fbtn {
     width: 100%;
@@ -154,23 +148,40 @@ footer h3 {
 }
 
 .fbtn:hover {
-
+    
     background: linear-gradient(to right, #c06922 0%, #ee4931 100%);
     color: black;
-
+    
 }
-
+.flogo{
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+.f1{
+    text-align: right;
+    padding: 10px;
+}
+.f2{
+    padding: 10px;
+    border-left: 3px solid white;
+}
 label {
     margin-top: 10px;
 }
+@media only screen and (max-width:1150px) {
+    .lastbtn {
+        border: 0;
+        padding: 8px 30px;
+        margin: 0px 20px;
+        font-size: 15px;
 
-input {
-    margin: 10px 0px;
-    // padding: 0px 2em;
-    padding-right: 2em;
+        background-color: #ee4931;
+    }
+
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:800px) {
 
     .imag {
         width: 25%;
@@ -210,6 +221,7 @@ input {
     .medium2 {
         display: flex;
         justify-content: center;
+        
         height: 350px;
     }
 

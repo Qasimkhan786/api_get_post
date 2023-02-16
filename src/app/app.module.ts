@@ -8,19 +8,23 @@ import { PostComponent } from './components/post/post.component';
 import {HttpClientModule} from "@angular/common/http";
 import { LoginPageComponent } from './components/login-page/login-page.component'
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import { UsertableComponent } from './components/usertable/usertable.component';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     GetapiComponent,
     PostComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    UsertableComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule 
+    NgbModule,
+    NgbDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

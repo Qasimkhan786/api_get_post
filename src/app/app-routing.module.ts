@@ -9,7 +9,7 @@ const routes: Routes = [
     redirectTo:'start',
     pathMatch:'full',
   },
-  {path:'',component:cmp.LoginPageComponent },
+  {path:'',component:cmp.UsertableComponent },
   
 ];
 
