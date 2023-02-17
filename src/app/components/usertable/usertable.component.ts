@@ -11,5 +11,13 @@ export class UsertableComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  btnd='medium1btn';
+  btnda="medium1btn medactive";
+  outline="foroutline"
+  val=true;
+  
+  val1=false;
+  forcolor(){
+    this.val=!this.val
+  }
 }

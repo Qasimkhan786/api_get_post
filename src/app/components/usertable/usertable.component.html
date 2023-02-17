@@ -30,11 +30,11 @@
 
 <div class="main">
     <div class="medium1">
-        <div>
-            <button class="medium1btn">Detaiji</button>
+        <div [ngClass]="val?'':outline">
+            <button [ngClass]="val?btnd:btnda" (click)="forcolor()">Detaiji</button>
         </div>
-        <div class="foroutline">
-            <button class="medium1btn medactive">Reservacije</button>
+        <div [ngClass]="val?outline:''">
+            <button [ngClass]="val?btnda:btnd" (click)="forcolor()">Reservacije</button>
         </div>
     </div>
     <div class="medium2">
@@ -71,9 +71,122 @@
     <div class="forspace">
 
     </div>
-    <div class="table">
-        <div class="tsub">
-            
+    <div class="table row margin-0">
+        <div class="tsub col-md-10">
+            <table>
+                <tr class="poly">
+                    <th class="fw">
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                </tr>
+                <tr class="ap">
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                </tr>
+                <tr >
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                </tr>
+                <tr >
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                </tr>
+                <tr >
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                </tr>
+                <tr >
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                </tr>
+                <tr >
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                </tr>
+                <tr >
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                    <th>
+                        qasim
+                    </th>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
