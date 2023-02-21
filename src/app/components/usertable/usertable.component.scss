@@ -225,18 +225,17 @@ table {
     width: 100%;
     
 }
-table tr th{
-    border:1px solid black ;
-    
-}
+
 .fw{
     // position: relative;
     // margin: 10px 0px;
     width: 10%;
 }
 .poly{
+    color: white;
     background: linear-gradient(to right, #ee4931 0%, #c06922 100%);
-    clip-path: polygon(5% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 51%);
+    // clip-path: polygon(5% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 51%);
+    clip-path: polygon(4% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 29%);
 }
 .ap{
     // position: fixed;
