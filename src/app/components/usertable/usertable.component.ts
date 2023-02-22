@@ -16,8 +16,16 @@ export class UsertableComponent implements OnInit {
   outline="foroutline"
   val=true;
   
-  val1=false;
-  forcolor(){
-    this.val=!this.val
+  // val1=false;
+  component1(){
+    if(this.val){
+      this.val=false;
+    }
+
+  }
+  component2(){
+    if(!this.val){
+      this.val=true;
+    }
   }
 }
