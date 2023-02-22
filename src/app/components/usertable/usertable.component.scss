@@ -249,6 +249,9 @@ table {
     clip-path: polygon(3% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 20%);
     box-shadow: inset 2px 2px 10px 1px rgba(0, 0, 0, 0.4);
 }
+.tsub table tr td{
+    border: 1px solid rgba(92, 80, 80, 0.397);
+}
 footer {
     background-color: black;
     color: white;
