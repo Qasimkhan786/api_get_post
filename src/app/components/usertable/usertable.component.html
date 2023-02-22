@@ -44,26 +44,26 @@
     <div class="fordays row margin-0">
         <div class="outside col-md-7">
             <div class="fordaysbtn">
-                <div class="active forbtn ">
-                    <button class="mon ">Mon</button>
+                <div [ngClass]="mon?fordaysactive:''" class="forbtn">
+                    <button class="mon" (click)="fordaysbtn('mon')" >Mon</button>
                 </div>
-                <div class="forbtn">
-                    <button class="mon">Tues</button>
+                <div [ngClass]="tue?fordaysactive:''" class="forbtn">
+                    <button class="mon" (click)="fordaysbtn('tue')">Tues</button>
                 </div>
-                <div class="forbtn">
-                    <button class="mon">Web</button>
+                <div [ngClass]="wed?fordaysactive:''" class="forbtn">
+                    <button class="mon" (click)="fordaysbtn('wed')">Wed</button>
                 </div>
-                <div class="forbtn">
-                    <button class="mon">Thrus</button>
+                <div [ngClass]="th?fordaysactive:''" class="forbtn">
+                    <button class="mon" (click)="fordaysbtn('th')">Thrus</button>
                 </div>
-                <div class="forbtn">
-                    <button class="mon">Fri</button>
+                <div [ngClass]="fri?fordaysactive:''" class="forbtn">
+                    <button class="mon" (click)="fordaysbtn('fri')">Fri</button>
                 </div>
-                <div class="forbtn">
-                    <button class="mon">Sat</button>
+                <div [ngClass]="sat?fordaysactive:''" class="forbtn">
+                    <button class="mon" (click)="fordaysbtn('sat')">Sat</button>
                 </div>
-                <div class="forbtn">
-                    <button class="mon">Sun </button>
+                <div [ngClass]="sun?fordaysactive:''" class="forbtn">
+                    <button class="mon" (click)="fordaysbtn('sun')">Sun </button>
                 </div>
             </div>
         </div>
