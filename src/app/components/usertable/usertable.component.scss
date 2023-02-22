@@ -117,13 +117,13 @@ nav {
 }
 
 .main {
-    background: whitesmoke;
+    background-color:#ffffff;
 }
 
 .fordays {
     display: flex;
     justify-content: center;
-    // 
+    background-color:#ffffff;
     // margin-bottom: 10px;
 }
 
@@ -131,20 +131,21 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 100%;
-    height: 10vh;
-    background: rgba(31, 27, 27, 0.836);
+    // width: 15vw;
+    height: 12vh;
+    background: #c0c0c0;
     clip-path: polygon(100% 0, 100% 50%, 94% 100%, 0% 100%, 0 54%, 6% 0);
-    margin: 20px 0px;
+    margin: 0px 0px 50px 0px;
     border-radius: 5px solid blue;
 
 }
 
 .fordaysbtn {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     // align-items: center;
     position: absolute;
+    width: 99.5%;
     top: 2px;
     left: 2px;
     right: 2px;
@@ -154,12 +155,16 @@ nav {
 }
 
 .forbtn {
-    background: white;
-    border-left: 1px solid black;
+    background: #f6f6f6;
+    border-left: 1px solid #c0c0c0;
     // border-right: 2px solid black;
     transform: skew(-25deg);
     // margin-bottom: 10px;
 
+}
+.forbtn button{
+    margin: 0px 6px;
+    color: #999999;
 }
 
 // .forbtn::before {
@@ -195,9 +200,9 @@ nav {
 .forspace {
     height: 5vh;
     width: 100%;
-    background-color: whitesmoke;
-    border-top: 1px solid rgba(43, 38, 38, 0.808);
-    border-bottom: 1px solid rgba(43, 38, 38, 0.808);
+    background-color:#ffffff;
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed;
     margin: 0%;
 }
 
@@ -206,7 +211,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color:#f0f0f0 ;
     // position: relative;
 
 
@@ -222,19 +227,20 @@ nav {
     text-align: center;
     width: 100%;
     height: 500px !important;
-    overflow: scroll;
+    overflow: auto;
 
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
-    background: whitesmoke;
+    width: 4px;
+    background: #ffffff;
     margin: 0%;
     padding: 0%;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #c2c2c2;
+    border-radius: 15px;
 }
 
 table {
@@ -249,10 +255,6 @@ table {
     width: 10%;
 }
 
-.tbc {
-    width: 10%;
-    background: #f8f8f8;
-}
 
 .poly {
     color: white;
@@ -264,9 +266,17 @@ table {
 
 .tsub table tr td {
     border: 1px solid rgba(92, 80, 80, 0.397);
+    
+}
+.tsub table tr{
     table-layout: fixed;
+    background-color: white;
     // width: 5px;
     overflow: scroll;
+}
+.tbc {
+    width: 10%;
+    background-color: #f8f8f8;
 }
 
 footer {
