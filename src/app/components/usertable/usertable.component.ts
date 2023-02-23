@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-usertable',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./usertable.component.scss']
 })
 export class UsertableComponent implements OnInit {
-
+  faCalendarDays = faCalendarDays;
   constructor() { }
 
   ngOnInit(): void {

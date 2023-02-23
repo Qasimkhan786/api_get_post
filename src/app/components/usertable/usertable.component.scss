@@ -119,7 +119,16 @@ nav {
 .main {
     background-color:#ffffff;
 }
-
+.forcalen{
+    text-align: right;
+    margin-bottom: 30px;
+}
+.icon{
+    // font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
 .fordays {
     display: flex;
     justify-content: center;

@@ -10,6 +10,7 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { UsertableComponent } from './components/usertable/usertable.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-    NgbDropdownModule
+    NgbDropdownModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

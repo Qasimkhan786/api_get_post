@@ -43,6 +43,7 @@
     </div>
     <div class="fordays row margin-0">
         <div class="outside col-md-8">
+            
             <div class="fordaysbtn">
                 <div [ngClass]="mon?fordaysactive:''" class="forbtn">
                     <button class="mon" (click)="fordaysbtn('mon')" >Mon<p>2.6</p></button>
@@ -74,6 +75,10 @@
     </div>
     <div class="table row margin-0 ">
         <div class="col-md-10">
+            <div class="forcalen">
+                <i>Switch Calender view </i>
+                <fa-icon [icon]="faCalendarDays" class="icon"></fa-icon>
+            </div>
             <div class="tsub1 poly">
                 <table>
 
