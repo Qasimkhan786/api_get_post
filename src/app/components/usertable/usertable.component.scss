@@ -107,10 +107,6 @@ nav {
     border-radius: 5px;
     border: 1px solid #ee4931;
 }
-.container{
-    width: 200vw;
-}
-
 .medium2 {
     padding: 20px 140px;
     font-size: 15px;
@@ -146,20 +142,21 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 100vw;
-    height: 12vh;
+    width: 100%;
+    height: 80px;
     background: #c0c0c0;
     clip-path: polygon(100% 0, 100% 50%, 94% 100%, 0% 100%, 0 54%, 6% 0);
     // margin: 0px 0px 25px 0px;
     // border-radius: 5px solid blue;
     z-index: 1;
+    // overflow: scroll;
 
 }
 
 .fordaysbtn {
     display: flex;
     position: absolute;
-    // width: 100vw;
+    width: 100%;
     top: 1px;
     left: 1px;
     right: 1px;
@@ -319,3 +316,24 @@ footer {
     padding: 10px;
     border-left: 3px solid white;
 }
+@media only screen and (max-width:2100px) {
+    *{
+
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:1400px) {
+    *{
+
+        font-size: 1rem;
+    }
+
+}
+// @media only screen and (min-width:900px) {
+//     *{
+
+//         font-size: 1rem;
+//     }
+
+// }
+// write a code of plogone border
