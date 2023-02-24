@@ -7,6 +7,7 @@
 }
 
 nav {
+    width: 100%;
     background-color: black;
 
 }
@@ -17,6 +18,7 @@ nav {
     padding: 20px 0px;
     padding-left: 10px;
     border-right: 1px solid whitesmoke;
+    min-width: auto;
 
 }
 
@@ -95,7 +97,7 @@ nav {
 }
 
 .medactive {
-    box-shadow: inset 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset -5px -5px 17px 0px rgb(38 38 38 / 77%);
     background-image: linear-gradient(to right bottom, #ee4931, #e5512c, #dc5827, #d45e24, #cb6322, #cb6322, #cb6322, #cb6322, #d45e24, #dc5827, #e5512c, #ee4931);
     border: 1px solid transparent;
 
@@ -119,7 +121,11 @@ nav {
 }
 
 .main {
+    width: 100%;
     background-color:#ffffff;
+}
+.container{
+    width: 100%;
 }
 .forcalen{
     text-align: right;
@@ -141,9 +147,10 @@ nav {
 .outside {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
-    height: 80px;
+    height: 70px;
     background: #c0c0c0;
     clip-path: polygon(100% 0, 100% 50%, 94% 100%, 0% 100%, 0 54%, 6% 0);
     // margin: 0px 0px 25px 0px;
@@ -156,17 +163,19 @@ nav {
 .fordaysbtn {
     display: flex;
     position: absolute;
-    width: 100%;
+    width: 99.6%;
     top: 1px;
     left: 1px;
-    right: 1px;
+    right: 2px;
     bottom: 1px;
     background: white;
     clip-path: polygon(100% 0, 100% 50%, 94% 100%, 0% 100%, 0 54%, 6% 0);
     z-index: -1;
+
 }
 
 .forbtn {
+    width: 14.29%;
     position: relative;
     background: #f6f6f6;
     border-left: 1px solid #c0c0c0;
@@ -174,10 +183,12 @@ nav {
     transform: skew(-25deg);
     // margin-bottom: 10px;
     z-index: -1;
+    text-align: center;
 
 }
 .forbtn button{
-    margin: 0px 2px;
+    
+    // margin: 0px 2px;
     color: #999999;
 }
 
@@ -189,8 +200,7 @@ nav {
     position: relative;
     z-index: 1;
     background: linear-gradient(to right, #ee4931 0%, #c06922 100%);
-    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.1), 1px 1px #c06922;
-
+    box-shadow: inset -5px -5px 17px 0px rgb(38 38 38 / 77%);
 }
 .adays{
     display: flex;
@@ -294,6 +304,7 @@ table {
 }
 
 footer {
+    width: 100%;
     background-color: black;
     color: white;
     // display: flex;
@@ -321,11 +332,35 @@ footer {
 
         font-size: 1.5rem;
     }
+    .outside{
+        height: 90px;
+    }
+    
+
 }
 @media only screen and (max-width:1400px) {
     *{
 
         font-size: 1rem;
+    }
+    .outside{
+        height: 70px;
+    }
+}
+@media only screen and (max-width:1100px) {
+    .forimage {
+        
+    width: 25px;
+    height: 25px;
+    
+
+    }
+    .forpad{
+        padding: 0%;
+        margin: 0;
+    }
+    .outside{
+        height: 60px;
     }
 
 }
