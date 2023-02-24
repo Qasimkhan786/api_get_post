@@ -43,7 +43,7 @@
     
         </div>
         <div class="fordays row margin-0">
-            <div class="outside col-md-9">
+            <div class="outside col-md-12">
                 
                 <div class="fordaysbtn">
                     <div [ngClass]="mon?fordaysactive:''" class="forbtn">
@@ -72,13 +72,13 @@
             </div>
         </div>
         <div class="adays">
-            <div class="forbtnoutline"></div>
-            <div class="forbtnoutline"></div>
-            <div class="forbtnoutline"></div>
-            <div class="forbtnoutline"></div>
-            <div class="forbtnoutline"></div>
-            <div class="forbtnoutline"></div>
-            <div class="forbtnoutline"></div>
+            <div [ngClass]="mon?boutline:''" class="forw"></div>
+            <div [ngClass]="tue?boutline:''" class="forw"></div>
+            <div [ngClass]="wed?boutline:''" class="forw"></div>
+            <div [ngClass]="th?boutline:''" class="forw"></div>
+            <div [ngClass]="fri?boutline:''" class="forw"></div>
+            <div [ngClass]="sat?boutline:''" class="forw"></div>
+            <div [ngClass]="sun?boutline:''" class="forw"></div>
         </div>
         <div class="forspace">
     

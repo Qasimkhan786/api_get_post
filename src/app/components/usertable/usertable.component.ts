@@ -15,6 +15,7 @@ export class UsertableComponent implements OnInit {
   btnd='medium1btn';
   btnda="medium1btn medactive";
   outline="foroutline"
+  boutline="forbtnoutline";
   val=true;
   fordaysactive="active";
   // val1=false;
