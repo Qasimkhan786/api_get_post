@@ -83,7 +83,7 @@ nav {
 
 .medium1btn {
     background: rgb(36, 32, 32);
-    
+
     margin: 30px 0px;
     padding: 10px 70px;
     border: 1px solid #ee4931;
@@ -100,8 +100,8 @@ nav {
     // margin: 30px 0px;
     border: none;
     padding: 11px 71px;
-    box-shadow: inset -5px -6px 17px 0px rgb(0 ,0 ,0 , 0.63);
-    background-image: linear-gradient(to top, #f34432,#f78d4d);
+    box-shadow: inset -5px -6px 17px 0px rgb(0, 0, 0, 0.63);
+    background-image: linear-gradient(to top, #f34432, #f78d4d);
 
 }
 
@@ -207,8 +207,8 @@ nav {
 .active {
     position: relative;
     z-index: 1;
-    box-shadow: inset -4px -11px 22px -4px rgb(0 ,0 ,0 , 0.63);
-    background-image: linear-gradient(to top, #f34432,#f78d4d);
+    box-shadow: inset -4px -11px 22px -4px rgb(0, 0, 0, 0.63);
+    background-image: linear-gradient(to top, #f34432, #f78d4d);
 }
 
 .adays {
@@ -220,7 +220,7 @@ nav {
 .forw {
     transform: skew(-30deg);
     width: 14.29%;
-    margin-right:15px;
+    margin-right: 15px;
 
 }
 
@@ -233,7 +233,7 @@ nav {
 .mon {
     border-bottom: 2px solid black;
     margin: 0%;
-    padding: 10px 43px;
+
     background: transparent;
     border: none;
 }
@@ -302,8 +302,8 @@ table {
     // background-image: linear-gradient(to left bottom, #ee4931, #e5512c, #dc5827, #d45e24, #cb6322, #cb6322, #cb6322, #cb6322, #d45e24, #dc5827, #e5512c, #ee4931);
     // clip-path: polygon(5% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 51%);
     clip-path: polygon(3% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 20%);
-    box-shadow:inset 1px -5px 18px -2px  rgb(0 ,0 ,0 , 0.63);
-    background-image: linear-gradient(to right, #f34432,#f78d4d);
+    box-shadow: inset 1px -5px 18px -2px rgb(0, 0, 0, 0.63);
+    background-image: linear-gradient(to right, #f34432, #f78d4d);
 }
 
 .tsub table tr td {
@@ -353,6 +353,7 @@ footer {
 
         font-size: 1.5rem;
     }
+
     .forimage {
 
         width: 45px;
@@ -360,6 +361,7 @@ footer {
 
 
     }
+
     .outside {
         height: 100px;
     }
@@ -383,6 +385,7 @@ footer {
 
         width: 25px;
         height: 25px;
+        min-width: auto;
 
 
     }
@@ -395,7 +398,126 @@ footer {
     .outside {
         height: 60px;
     }
+    .medium2{
+        padding: 10px 10px;
+    }
+    .medium2 a{
+        font-size: 12px;
+    }
+    
 
+}
+
+@media only screen and (max-width:800px) {
+    .forimage {
+
+        width: 20px;
+        height: 20px;
+        min-width: auto;
+
+
+    }
+    nav {
+        width: 100%;
+        
+    
+    }
+    .imag {
+        width: 20%;
+        padding: 10px 0px;
+        padding-left: 4px;   
+    }
+    .mid{
+        width: 50%;
+        font-size: 10px;
+    }
+    .last1{
+        width: 30%;
+    }
+    .lastbtn{
+        margin: 0%;
+        padding: 0%;
+        font-size: 10px;
+    }
+    .medium1{
+        width: 100%;
+    }
+    .medium1btn{
+        margin: 20px 0px;
+        font-size:10px ;
+        padding: 5px 40px;
+    }
+    .medactive {
+        padding: 6px 41px;
+    }
+    .medium2{
+        padding: 5px 10px;
+    }
+    .medium2 a{
+        font-size: 10px;
+    }
+    .outside {
+        height: 60px;
+    }
+    .mon{
+        font-size: 10px;
+    }
+    .forcalen i{
+        font-size: 12px;
+    }
+    .icon {
+        // font-size: 1.5rem;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 1px 3px;
+    }
+    .forcalen{
+        margin-bottom: 15px;
+    }
+    .fw {
+        // position: relative;
+        // margin: 10px 0px;
+        width: 5%;
+        // font-size: 12px;
+    }
+    .tsub table tr td {
+        font-size: 12px;
+    
+    }
+    .tsub1 table tr th{
+        font-size: 10px;
+    }
+    .tbc {
+        width: 5%;
+        
+    }
+    footer {
+        width: 100%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+    .flogo {
+        text-align: center;
+        width: 100%;
+        padding-top: 5px;
+    }
+    .footer{
+        width: 100%;
+    }
+    .f1 {
+        padding: 5px;
+        width: 30%;
+        font-size: 10px;
+    }
+    
+    .f2 {
+        padding: 5px;
+        font-size: 10px;
+        width: 40%;
+        
+    }
+    
 }
 
 // @media only screen and (min-width:900px) {
