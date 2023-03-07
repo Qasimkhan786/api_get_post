@@ -159,7 +159,7 @@ nav {
     width: 100%;
     height: 70px;
     background: #c0c0c0;
-    clip-path: polygon(100% 0, 100% 50%, 94% 100%, 0% 100%, 0 54%, 6% 0);
+    clip-path: polygon(3% 0, 100% 0, 100% 50%, 98% 100%, 0 100%, 0% 50%);
     // margin: 0px 0px 25px 0px;
     // border-radius: 5px solid blue;
     z-index: 1;
@@ -176,7 +176,7 @@ nav {
     right: 2px;
     bottom: 1px;
     background: white;
-    clip-path: polygon(100% 0, 100% 50%, 94% 100%, 0% 100%, 0 54%, 6% 0);
+    clip-path: polygon(3% 0, 100% 0, 100% 50%, 98% 100%, 0 100%, 0% 50%);
     z-index: -1;
 
 }
@@ -190,6 +190,8 @@ nav {
     transform: skew(-25deg);
     // margin-bottom: 10px;
     z-index: -1;
+    display: flex;
+    justify-content: center;
     text-align: center;
 
 }
@@ -198,6 +200,7 @@ nav {
 
     // margin: 0px 2px;
     color: #999999;
+    padding-top: 10px;
 }
 
 .active button {
@@ -315,12 +318,15 @@ table {
     table-layout: fixed;
     background-color: white;
     // width: 5px;
-    overflow: scroll;
+    
 }
+
 
 .tbc {
     width: 10%;
     background-color: #f8f8f8;
+    // display: block;
+    
 }
 
 footer {
@@ -335,9 +341,9 @@ footer {
 .flogo {
     text-align: center;
     width: 100%;
+    font-size: 20px;
     padding-top: 10px;
 }
-
 .f1 {
     text-align: right;
     padding: 10px;
@@ -365,7 +371,9 @@ footer {
     .outside {
         height: 100px;
     }
-
+    .flogo img{
+        width: 20%;
+    }
 
 }
 
@@ -374,9 +382,19 @@ footer {
 
         font-size: 1rem;
     }
+    .forimage {
+
+        width: 35px;
+        height: 35px;
+
+
+    }
 
     .outside {
         height: 70px;
+    }
+    .flogo img{
+        width: 20%;
     }
 }
 
@@ -501,6 +519,9 @@ footer {
         text-align: center;
         width: 100%;
         padding-top: 5px;
+    }
+    .flogo img{
+        width: 30%;
     }
     .footer{
         width: 100%;
