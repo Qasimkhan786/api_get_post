@@ -257,6 +257,7 @@ nav {
 }
 ::-webkit-scrollbar {
     width: 4px;
+    height: 4px;
     background: #ffffff;
     margin: 0%;
     padding: 0%;
@@ -292,6 +293,9 @@ nav {
 .tbc {
     width: 10%;
     background-color: #f8f8f8;
+    position: relative;
+    left: 0%;
+    
     // position: sticky;
     // top: 0;
     
