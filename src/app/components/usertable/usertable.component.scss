@@ -252,6 +252,9 @@ nav {
 
 }
 .tsubtd{
+    // position: relative;
+    // left: 50px;
+    width: 30% ;
     min-width: 30%;
 
 }
@@ -281,30 +284,32 @@ nav {
 
 .tsub table tr td {
     border: 1px solid rgba(92, 80, 80, 0.397);
-
 }
 
 .tsub table tr {
-    table-layout: fixed;
+    // table-layout: fixed;
     background-color: white;
+    // display: block;
 }
 
 
 .tbc {
     width: 10%;
+    // height: 40px;
     background-color: #f8f8f8;
-    position: relative;
+    // border: 1px solid black;
+    position: sticky;
+    top: 0%;
     left: 0%;
-    
-    // position: sticky;
-    // top: 0;
-    
+    z-index: 2;
+
 }
 
 footer {
     width: 100%;
     background-color: black;
     color: white;
+    font-weight: bold;
     // display: flex;
     // align-items: center;
     // justify-content: center;
