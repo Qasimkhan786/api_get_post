@@ -1,0 +1,97 @@
+.margin-0 {
+    margin: 0px;
+}
+
+.main {
+    position: relative;
+    left: 23%;
+    margin-top: 25px;
+    width: 40%;
+    height: 65vh;
+    overflow: scroll;
+
+}
+
+.btn {
+    padding: 5px 35px;
+
+    background: white;
+    color: black;
+    // border: 5px solid white;
+}
+
+.active {
+    background: rgb(0, 0, 0);
+    color: white;
+
+    // border: 5px solid white;
+    // border-radius: 10px;
+
+}
+
+.first {
+
+    & h3 {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+}
+
+.po1 {
+
+    border: 1px solid black;
+    line-height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    
+    & i {
+        position: absolute;
+        top: 17px;
+        left: 17px;
+        font-size: 20px;
+        background: rgba(64, 64, 184, 0.904);
+        border-radius: 30px;
+        padding: 9px 12px;
+        margin-right: 10px;
+    }
+
+    & h3 {
+        position: relative;
+        top: 20px;
+        left: 50px;
+        padding: 0%;
+        margin: 0%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    & p {
+        position: relative;
+        top: 0px;
+        left: 50px;
+        padding: 0%;
+        margin: 0%;
+        font-size: 10px;
+    }
+}
+.po1:hover{
+    box-shadow: 5px 4px rgba(73, 72, 72, 0.664);
+    transition: 1sec;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    // height: 4px;
+    background: #ffffff;
+    margin: 0%;
+    padding: 0%;
+}
+::-webkit-scrollbar-thumb {
+    background: #c2c2c2;
+    border-radius: 15px;
+}
+.limitTextHeight{
+    display: none;
+}

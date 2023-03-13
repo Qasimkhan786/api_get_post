@@ -9,7 +9,12 @@ const routes: Routes = [
     redirectTo:'start',
     pathMatch:'full',
   },
-  {path:'',component:cmp.UsertableComponent },
+  {path:'',component:cmp.DashbComponent, 
+  children: [
+    {path:'payment',component:cmp.PaymentComponent}
+  ]
+},
+  
   
 ];
 

@@ -11,6 +11,13 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { UsertableComponent } from './components/usertable/usertable.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PaymentComponent } from './components/payment/payment.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { DashbComponent } from './components/dashb/dashb.component';
+// import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -19,6 +26,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PostComponent,
     LoginPageComponent,
     UsertableComponent,
+    PaymentComponent,
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    DashbComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -26,7 +40,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     NgbModule,
     NgbDropdownModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

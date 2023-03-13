@@ -247,15 +247,13 @@ nav {
     
 }
 .tsub table{
-    width: 1100px !important;
+    width: 1200px !important;
     overflow-x: scroll;
 
 }
 .tsubtd{
-    // position: relative;
-    // left: 50px;
-    width: 30% ;
-    min-width: 30%;
+    // width: calc(100vw - 50px)
+    width: 50px;
 
 }
 ::-webkit-scrollbar {
@@ -299,8 +297,9 @@ nav {
     background-color: #f8f8f8;
     // border: 1px solid black;
     position: sticky;
-    top: 0%;
+    // top: 0;
     left: 0%;
+    // bottom: 0%;
     z-index: 2;
 
 }
