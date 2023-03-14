@@ -17,6 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashbComponent } from './components/dashb/dashb.component';
+import { AccountsComponent } from './components/accounts/accounts.component';
+import { CardsComponent } from './components/cards/cards.component';
 // import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
@@ -31,6 +33,8 @@ import { DashbComponent } from './components/dashb/dashb.component';
     FooterComponent,
     SidebarComponent,
     DashbComponent,
+    AccountsComponent,
+    CardsComponent,
 
 
   ],

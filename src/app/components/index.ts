@@ -4,6 +4,8 @@ import {LoginPageComponent} from "./login-page/login-page.component";
 import{UsertableComponent} from "./usertable/usertable.component";
 import {PaymentComponent} from "./payment/payment.component"
 import {DashbComponent} from "./dashb/dashb.component";
+import { CardsComponent } from "./cards/cards.component";
+import { AccountsComponent } from "./accounts/accounts.component";
 
 export const Components:any[]=[
     GetapiComponent,
@@ -11,7 +13,9 @@ export const Components:any[]=[
     LoginPageComponent,
     UsertableComponent,
     PaymentComponent,
-    DashbComponent
+    DashbComponent,
+    AccountsComponent,
+    CardsComponent
 ]
 export{
     GetapiComponent,
@@ -19,5 +23,7 @@ export{
     LoginPageComponent,
     UsertableComponent,
     PaymentComponent,
-    DashbComponent
+    DashbComponent,
+    AccountsComponent,
+    CardsComponent
 }

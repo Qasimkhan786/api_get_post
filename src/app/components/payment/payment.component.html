@@ -1,8 +1,15 @@
 <div class="main">
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary btn active">Left</button>
-        <button type="button" class="btn btn-secondary btn">Middle</button>
-        <button type="button" class="btn btn-secondary btn">Right</button>
+    <div class="forbtn1">
+
+        <div>
+            <button type="button" class="btn btn-secondary" [ngClass]="first?activebtn:''" (click)="btnchange('first')" >Make a payment</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-secondary" [ngClass]="sec?activebtn:''" (click)="btnchange('sec')">Private transfer</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-secondary" [ngClass]="th?activebtn:''" (click)="btnchange('th')" >Exchange</button>
+        </div>
     </div>
     <div class="first">
         <h3>
@@ -17,8 +24,8 @@
         </div>
         <div class="po1 col-md-5">
             <i class="fa fa-sharp fa-regular fa-qrcode"></i>
-            <h3>Transfer for someone</h3>
-            <p>150 contacts</p>
+            <h3>Pay for utilities</h3>
+            <p>98 services provider</p>
         </div>
     </div>
     <div class="first">
@@ -27,72 +34,94 @@
         </h3>
     </div>
     <div class="po row margin-0">
-        <div class="po1 col-md-5 ">
+        <div class="sp col-md-5 ">
+            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
+            <h3>Mobile networks</h3>
+            <p>Top up your balance instantly with operation</p>
+        </div>
+        <div class="sp col-md-5">
             <i class="fa fa-sharp fa-regular fa-qrcode"></i>
             <h3>Transfer for someone</h3>
             <p>150 contacts</p>
         </div>
-        <div class="po1 col-md-5">
+        <div class="sp col-md-5 ">
             <i class="fa fa-sharp fa-regular fa-qrcode"></i>
             <h3>Transfer for someone</h3>
             <p>150 contacts</p>
         </div>
-        <div class="po1 col-md-5 ">
+        <div class="sp col-md-5">
+            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
+            <h3>Transfer for someone</h3>
+            <p>150 contacts</p>
+        </div><div class="sp col-md-5 ">
+            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
+            <h3>Mobile networks</h3>
+            <p>Top up your balance instantly with operation</p>
+        </div>
+        <div class="sp col-md-5">
             <i class="fa fa-sharp fa-regular fa-qrcode"></i>
             <h3>Transfer for someone</h3>
             <p>150 contacts</p>
         </div>
-        <div class="po1 col-md-5">
+        <div class="sp col-md-5 ">
             <i class="fa fa-sharp fa-regular fa-qrcode"></i>
             <h3>Transfer for someone</h3>
             <p>150 contacts</p>
         </div>
-        <div class="po1 col-md-5 ">
-            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
-            <h3>Transfer for someone</h3>
-            <p>150 contacts</p>
-        </div>
-        <div class="po1 col-md-5">
-            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
-            <h3>Transfer for someone</h3>
-            <p>150 contacts</p>
-        </div>
-        <div class="po1 col-md-5 ">
-            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
-            <h3>Transfer for someone</h3>
-            <p>150 contacts</p>
-        </div>
-        <div class="po1 col-md-5">
+        <div class="sp col-md-5">
             <i class="fa fa-sharp fa-regular fa-qrcode"></i>
             <h3>Transfer for someone</h3>
             <p>150 contacts</p>
         </div>
         <div class="row margin-0" [ngClass]="{'limitTextHeight': isReadMore}">
-            <div class="po1 col-md-5 ">
+            <div class="sp col-md-5 ">
+                <i class="fa fa-sharp fa-regular fa-qrcode"></i>
+                <h3>Mobile networks</h3>
+                <p>Top up your balance instantly with operation</p>
+            </div>
+            <div class="sp col-md-5">
                 <i class="fa fa-sharp fa-regular fa-qrcode"></i>
                 <h3>Transfer for someone</h3>
                 <p>150 contacts</p>
             </div>
-            <div class="po1 col-md-5">
+            <div class="sp col-md-5 ">
                 <i class="fa fa-sharp fa-regular fa-qrcode"></i>
                 <h3>Transfer for someone</h3>
                 <p>150 contacts</p>
             </div>
-            <div class="po1 col-md-5 ">
-                <i class="fa fa-sharp fa-regular fa-qrcode"></i>
-                <h3>Transfer for someone</h3>
-                <p>150 contacts</p>
-            </div>
-            <div class="po1 col-md-5">
+            <div class="sp col-md-5">
                 <i class="fa fa-sharp fa-regular fa-qrcode"></i>
                 <h3>Transfer for someone</h3>
                 <p>150 contacts</p>
             </div>
         </div>
-        <div>
+        <div class="forbtn">
             <button type="button" (click)="showText()">
-                {{ isReadMore ? 'Read More': 'Read Less' }}
+                {{ isReadMore ? '... See All Providers': '... Less All Providers' }}
             </button>
+        </div>
+    </div>
+</div>
+<div class="forright">
+    <div class="rightfirst">
+        <p>Add new template</p>
+    </div>
+    <div class="row margin-0 sec">
+        <h3>Recent payments</h3>
+        <div class="sec1 col-md-11">
+            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
+            <h3>Transfer for someone</h3>
+            <p>150 contacts</p>
+        </div>
+        <div class="sec1 col-md-11">
+            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
+            <h3>Transfer for someone</h3>
+            <p>150 contacts</p>
+        </div>
+        <div class="sec1 col-md-11">
+            <i class="fa fa-sharp fa-regular fa-qrcode"></i>
+            <h3>Transfer for someone</h3>
+            <p>150 contacts</p>
         </div>
     </div>
 </div>

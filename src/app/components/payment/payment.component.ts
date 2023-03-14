@@ -11,10 +11,31 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  isReadMore = true
+  isReadMore = true;
+  activebtn="active"
+  first=true;
+  sec=false;
+  th=false;
 
   showText() {
      this.isReadMore = !this.isReadMore
+  }
+  btnchange(value:any){
+    if(value==='first'){
+      this.first=true;
+      this.sec=false;
+      this.th=false;
+    }
+    if(value==='sec'){
+      this.first=false;
+      this.sec=true;
+      this.th=false;
+    }
+    if(value==='th'){
+      this.first=false;
+      this.sec=false;
+      this.th=true;
+    }
   }
 
 }

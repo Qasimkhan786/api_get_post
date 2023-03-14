@@ -3,7 +3,7 @@
     bottom: 0%;
     height: 95%;
     width: 15%;
-    background: rgb(68, 67, 67);
+    background: rgb(131, 128, 128);
 }
 .sidebar ul li a{
     text-decoration: none;
@@ -17,9 +17,13 @@
 }
 .sidebar img{
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-bottom: 30px;
     width: 50px;
     height: 50px;
     border-radius: 25px;
+}
+.active{
+    font-weight:bold ;
+    border-right: 2px solid black;
 }

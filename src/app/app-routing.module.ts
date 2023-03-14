@@ -11,7 +11,10 @@ const routes: Routes = [
   },
   {path:'',component:cmp.DashbComponent, 
   children: [
-    {path:'payment',component:cmp.PaymentComponent}
+    {path:'payment',component:cmp.PaymentComponent},
+    {path:'dashboard',component:cmp.DashbComponent},
+    {path:'card',component:cmp.CardsComponent},
+    {path:'account',component:cmp.AccountsComponent}
   ]
 },
   
