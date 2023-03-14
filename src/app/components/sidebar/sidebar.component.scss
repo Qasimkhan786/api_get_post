@@ -3,13 +3,14 @@
     bottom: 0%;
     height: 95%;
     width: 15%;
-    background: rgb(131, 128, 128);
+    background: rgb(190, 189, 189);
 }
 .sidebar ul li a{
     text-decoration: none;
     color: rgb(43, 41, 41);
     font-size: 15px;
     line-height: 35px;
+    cursor: pointer;
 }
 .sidebar ul li{
     list-style-type: none;

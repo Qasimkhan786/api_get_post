@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { 
   }
-  title="payment";
+  title="Payment";
   ngOnInit(): void {
   }
 
