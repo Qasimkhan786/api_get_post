@@ -30,8 +30,8 @@
 
 .active {
     font-weight: normal;
+    background: black !important;
     & button {
-        background: black;
         color: white;
 
         // border: 5px solid white;
