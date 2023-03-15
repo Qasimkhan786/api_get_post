@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
@@ -7,34 +7,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentComponent implements OnInit {
 
-  constructor() { }
+  activebtn = "active"
+  first = true;
+  sec = false;
+  th = false;
+  constructor(private router: Router) {
+    if (this.first) {
+      this.router.navigate(['payment/makepayment']);
+    }
+  }
 
   ngOnInit(): void {
   }
-  isReadMore = true;
-  activebtn="active"
-  first=true;
-  sec=false;
-  th=false;
-
-  showText() {
-     this.isReadMore = !this.isReadMore
-  }
-  btnchange(value:any){
-    if(value==='first'){
-      this.first=true;
-      this.sec=false;
-      this.th=false;
+  btnchange(value: any) {
+    if (value === 'first') {
+      this.first = true;
+      this.sec = false;
+      this.th = false;
+      this.router.navigate(['payment/makepayment']);
     }
-    if(value==='sec'){
-      this.first=false;
-      this.sec=true;
-      this.th=false;
+    if (value === 'sec') {
+      this.first = false;
+      this.sec = true;
+      this.th = false;
+      this.router.navigate(['/']);
     }
-    if(value==='th'){
-      this.first=false;
-      this.sec=false;
-      this.th=true;
+    if (value === 'th') {
+      this.first = false;
+      this.sec = false;
+      this.th = true;
+      this.router.navigate(['payment']);
     }
   }
 

@@ -19,6 +19,7 @@ export class SidebarComponent implements OnInit {
   in=false;
   trad=false;
   repo=false;
+  ps=false;
   forbtn(value:any){
     if(value==="das"){
       this.dash=true;
@@ -29,6 +30,7 @@ export class SidebarComponent implements OnInit {
       this.in=false;
       this.trad=false;
       this.repo=false;
+      this.ps=false;
     }
     else if(value==="accounts"){
       this.dash=false;
@@ -39,6 +41,7 @@ export class SidebarComponent implements OnInit {
       this.in=false;
       this.trad=false;
       this.repo=false;
+      this.ps=false;
     }
     else if(value==="cards"){
       this.dash=false;
@@ -49,6 +52,7 @@ export class SidebarComponent implements OnInit {
       this.in=false;
       this.trad=false;
       this.repo=false;
+      this.ps=false;
     }
     else if(value==="tran"){
       this.dash=false;
@@ -59,6 +63,7 @@ export class SidebarComponent implements OnInit {
       this.in=false;
       this.trad=false;
       this.repo=false;
+      this.ps=false;
     }
     else if(value==="pay"){
       this.dash=false;
@@ -69,6 +74,7 @@ export class SidebarComponent implements OnInit {
       this.in=false;
       this.trad=false;
       this.repo=false;
+      this.ps=false;
     }
     else if(value==="in"){
       this.dash=false;
@@ -79,6 +85,7 @@ export class SidebarComponent implements OnInit {
       this.in=true;
       this.trad=false;
       this.repo=false;
+      this.ps=false;
     }
     else if(value==="trad"){
       this.dash=false;
@@ -89,6 +96,7 @@ export class SidebarComponent implements OnInit {
       this.in=false;
       this.trad=true;
       this.repo=false;
+      this.ps=false;
     }
     
     else if(value==="repo"){
@@ -100,6 +108,19 @@ export class SidebarComponent implements OnInit {
       this.in=false;
       this.trad=false;
       this.repo=true;
+      this.ps=false;
+    }
+    else if(value==="ps"){
+      this.dash=false;
+      this.cards=false;
+      this.accounts=false;
+      this.tran=false;
+      this.pay=false;
+      this.in=false;
+      this.trad=false;
+      this.repo=false;
+      this.ps=true;
+
     }
   }
 }

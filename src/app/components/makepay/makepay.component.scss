@@ -1,0 +1,224 @@
+.margin-0 {
+    margin: 0px;
+}
+.main {
+    position: absolute;
+    left: 23%;
+    margin-top: 25px;
+    width: 50%;
+    height: 59vh;
+    overflow: scroll;
+    border-right: 1px solid rgb(59, 58, 58);
+
+}
+.btn {
+    padding: 5px 20px;
+    // font-weight: bold;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 13px;
+    width: 140px;
+}
+.forbtn1 {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    padding: 4px;
+    // background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.active {
+    & button {
+        background: black;
+        color: white;
+
+        // border: 5px solid white;
+        // border-radius: 10px;
+    }
+}
+.first {
+
+    & h3 {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+}
+.po1 {
+
+    box-shadow: 0px 0px 2px 1px rgba(73, 72, 72, 0.664);
+    line-height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 25px;
+    margin-bottom: 10px;
+
+    & i {
+        position: absolute;
+        top: 17px;
+        left: 17px;
+        font-size: 20px;
+        background: rgba(64, 64, 184, 0.904);
+        border-radius: 30px;
+        padding: 9px 11px;
+        margin-right: 10px;
+    }
+
+    & h3 {
+        position: relative;
+        top: 17px;
+        left: 50px;
+        padding: 0%;
+        margin: 0%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    & p {
+        position: relative;
+        top: 0px;
+        left: 50px;
+        padding: 0%;
+        margin: 0%;
+        font-size: 10px;
+    }
+}
+
+.activediv{
+    box-shadow: 0px 5px 10px -3px rgba(73, 72, 72, 0.664);
+}
+.sp{
+    box-shadow: 0px 0px 2px 1px rgba(73, 72, 72, 0.664);
+    line-height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    & i {
+        position: absolute;
+        top: 14px;
+        left: 220px;
+        font-size: 20px;
+        background: rgba(73, 72, 72, 0.664);
+        border-radius: 30px;
+        padding: 9px 11px;
+        margin-right: 10px;
+    }
+
+    & h3 {
+        position: relative;
+        top: 10px;
+        left: 0px;
+        padding: 0%;
+        margin: 0%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    & p {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        font-size: 11px;
+        width: 200px;
+        line-height: 15px;
+        
+    }
+}
+::-webkit-scrollbar {
+    width: 4px;
+    // height: 4px;
+    background: #ffffff;
+    margin: 0%;
+    padding: 0%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c2c2c2;
+    border-radius: 15px;
+}
+
+.limitTextHeight {
+    display: none;
+}
+
+.forbtn {
+    & button {
+        background: transparent;
+        border: none;
+        font-weight: bold;
+    }
+}
+
+.forright {
+
+    position: absolute;
+    left: 75%;
+    top: 130px;
+    width: 23%;
+    // background-color: black;
+    height: 67vh;
+    // overflow-y: scroll;
+}
+
+.rightfirst {
+    width: 100%;
+
+    & p {
+        font-weight: bold;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.sec {
+    width: 100%;
+    margin: 0%;
+
+    & h3 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    & .sec1 {
+        box-shadow: 0px 0px 2px 1px rgba(73, 72, 72, 0.664);
+        line-height: 40px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        & i {
+            position: absolute;
+            top: 17px;
+            left: 17px;
+            font-size: 20px;
+            background: rgba(73, 72, 72, 0.664);
+            border-radius: 30px;
+            padding: 9px 12px;
+            margin-right: 10px;
+        }
+
+        & h3 {
+            position: relative;
+            top: 15px;
+            left: 50px;
+            padding: 0%;
+            margin: 0%;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        & p {
+            position: relative;
+            top: 0px;
+            left: 50px;
+            padding: 0%;
+            margin: 0%;
+            font-size: 10px;
+        }
+    }
+
+}

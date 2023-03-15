@@ -1,39 +1,35 @@
 .margin-0 {
     margin: 0px;
 }
-
-.main {
-    position: relative;
-    left: 23%;
-    margin-top: 25px;
-    width: 50%;
-    height: 66vh;
-    overflow: scroll;
-    border-right: 1px solid rgb(59, 58, 58);
-
-}
-
 .btn {
     padding: 5px 20px;
     // font-weight: bold;
-    background: white;
+    background: transparent;
     color: black;
     border: none;
     font-size: 13px;
     width: 140px;
+    font-weight: bold;
+    word-spacing: 1px;
 }
 
 .forbtn1 {
     display: flex;
     justify-content: center;
-    width: 65%;
-    padding: 4px;
-    // background: white;
-    border: 1px solid black;
+    width: 32%;
+    padding: 10px;
+
+    background: rgb(232, 233, 234);
+    // border: 1px solid black;
+    position: relative;
+    left: 23%;
     border-radius: 10px;
+    
+    
 }
 
 .active {
+    font-weight: normal;
     & button {
         background: black;
         color: white;
@@ -41,189 +37,4 @@
         // border: 5px solid white;
         // border-radius: 10px;
     }
-}
-
-.first {
-
-    & h3 {
-        font-size: 17px;
-        font-weight: bold;
-        margin-top: 20px;
-    }
-}
-
-.po1 {
-
-    border: 1px solid black;
-    line-height: 50px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 25px;
-    margin-bottom: 10px;
-
-    & i {
-        position: absolute;
-        top: 17px;
-        left: 17px;
-        font-size: 20px;
-        background: rgba(64, 64, 184, 0.904);
-        border-radius: 30px;
-        padding: 9px 11px;
-        margin-right: 10px;
-    }
-
-    & h3 {
-        position: relative;
-        top: 17px;
-        left: 50px;
-        padding: 0%;
-        margin: 0%;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    & p {
-        position: relative;
-        top: 0px;
-        left: 50px;
-        padding: 0%;
-        margin: 0%;
-        font-size: 10px;
-    }
-}
-
-.po1:hover {
-    box-shadow: 5px 4px rgba(73, 72, 72, 0.664);
-    transition: 1sec;
-}
-.sp{
-    border: 1px solid black;
-    line-height: 50px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 25px;
-    margin-bottom: 10px;
-    & i {
-        position: absolute;
-        top: 14px;
-        left: 220px;
-        font-size: 20px;
-        background: rgba(64, 64, 184, 0.904);
-        border-radius: 30px;
-        padding: 9px 11px;
-        margin-right: 10px;
-    }
-
-    & h3 {
-        position: relative;
-        top: 10px;
-        left: 0px;
-        padding: 0%;
-        margin: 0%;
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    & p {
-        position: relative;
-        top: 10px;
-        padding: 0%;
-        margin: 0px;
-        font-size: 11px;
-        // width: 200px;
-        
-    }
-}
-::-webkit-scrollbar {
-    width: 4px;
-    // height: 4px;
-    background: #ffffff;
-    margin: 0%;
-    padding: 0%;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #c2c2c2;
-    border-radius: 15px;
-}
-
-.limitTextHeight {
-    display: none;
-}
-
-.forbtn {
-    & button {
-        background: transparent;
-        border: none;
-        font-weight: bold;
-    }
-}
-
-.forright {
-
-    position: absolute;
-    left: 75%;
-    top: 130px;
-    width: 23%;
-    // background-color: black;
-    height: 67vh;
-    overflow: scroll;
-}
-
-.rightfirst {
-    width: 100%;
-
-    & p {
-        font-weight: bold;
-        display: flex;
-        justify-content: end;
-    }
-}
-
-.sec {
-    width: 100%;
-    margin: 0%;
-
-    & h3 {
-        font-weight: bold;
-        font-size: 17px;
-    }
-
-    & .sec1 {
-        border: 1px solid black;
-        line-height: 40px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-
-        & i {
-            position: absolute;
-            top: 17px;
-            left: 17px;
-            font-size: 20px;
-            background: rgba(64, 64, 184, 0.904);
-            border-radius: 30px;
-            padding: 9px 12px;
-            margin-right: 10px;
-        }
-
-        & h3 {
-            position: relative;
-            top: 15px;
-            left: 50px;
-            padding: 0%;
-            margin: 0%;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        & p {
-            position: relative;
-            top: 0px;
-            left: 50px;
-            padding: 0%;
-            margin: 0%;
-            font-size: 10px;
-        }
-    }
-
 }

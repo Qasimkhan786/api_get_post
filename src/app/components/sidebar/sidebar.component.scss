@@ -2,19 +2,23 @@
     position: absolute;
     bottom: 0%;
     height: 95%;
-    width: 15%;
-    background: rgb(190, 189, 189);
+    width: 17%;
+    background: rgb(243, 244, 246);
 }
 .sidebar ul li a{
     text-decoration: none;
-    color: rgb(43, 41, 41);
-    font-size: 15px;
+    font-size: 13px;
     line-height: 35px;
     cursor: pointer;
+    font-weight:bold ;
+    color: rgb(150, 151, 153);
 }
 .sidebar ul li{
     list-style-type: none;
 
+}
+.sidebar ul li a i{
+    margin-right: 10px;
 }
 .sidebar img{
     margin-top: 20px;
@@ -25,6 +29,9 @@
     border-radius: 25px;
 }
 .active{
-    font-weight:bold ;
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(79, 112, 158);
+    & a{
+        color: black !important;
+    }
 }
+

@@ -19,6 +19,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashbComponent } from './components/dashb/dashb.component';
 import { AccountsComponent } from './components/accounts/accounts.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { MakepayComponent } from './components/makepay/makepay.component';
 // import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
@@ -35,6 +36,7 @@ import { CardsComponent } from './components/cards/cards.component';
     DashbComponent,
     AccountsComponent,
     CardsComponent,
+    MakepayComponent,
 
 
   ],
