@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GetapiComponent } from './components/getapi/getapi.component';
@@ -20,7 +19,9 @@ import { DashbComponent } from './components/dashb/dashb.component';
 import { AccountsComponent } from './components/accounts/accounts.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { MakepayComponent } from './components/makepay/makepay.component';
+import { ReactiveFormsModule } from '@angular/forms';
 // import { MatButtonModule } from '@angular/material/button'
+
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MakepayComponent } from './components/makepay/makepay.component';
     AccountsComponent,
     CardsComponent,
     MakepayComponent,
+    
 
 
   ],
@@ -48,7 +50,7 @@ import { MakepayComponent } from './components/makepay/makepay.component';
     NgbDropdownModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-
+    ReactiveFormsModule
     
   ],
   providers: [],

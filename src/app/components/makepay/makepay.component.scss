@@ -1,6 +1,7 @@
 .margin-0 {
     margin: 0px;
 }
+
 .main {
     position: absolute;
     left: 23%;
@@ -11,6 +12,7 @@
     border-right: 1px solid rgb(59, 58, 58);
 
 }
+
 .btn {
     padding: 5px 20px;
     // font-weight: bold;
@@ -20,6 +22,7 @@
     font-size: 13px;
     width: 140px;
 }
+
 .forbtn1 {
     display: flex;
     justify-content: center;
@@ -29,6 +32,7 @@
     border: 1px solid black;
     border-radius: 10px;
 }
+
 .active {
     & button {
         background: black;
@@ -38,6 +42,7 @@
         // border-radius: 10px;
     }
 }
+
 .first {
 
     & h3 {
@@ -46,9 +51,10 @@
         margin-top: 20px;
     }
 }
+
 .po1 {
 
-    box-shadow: 0px 0px 2px 1px rgba(73, 72, 72, 0.664);
+    box-shadow: 3px 3px 6px 0px rgba(168, 168, 168, 0.562);
     line-height: 50px;
     border-radius: 10px;
     overflow: hidden;
@@ -87,16 +93,20 @@
     }
 }
 
-.activediv{
+.activediv {
     box-shadow: 0px 5px 10px -3px rgba(73, 72, 72, 0.664);
 }
-.sp{
-    box-shadow: 0px 0px 2px 1px rgba(73, 72, 72, 0.664);
+
+.sp {
+    box-shadow: 3px 3px 6px 0px rgba(168, 168, 168, 0.562);
     line-height: 50px;
     border-radius: 10px;
     overflow: hidden;
     margin-right: 25px;
     margin-bottom: 10px;
+    // opacity: 0.8;
+
+    // transition: opacity 250ms;
     & i {
         position: absolute;
         top: 14px;
@@ -127,9 +137,10 @@
         font-size: 11px;
         width: 200px;
         line-height: 15px;
-        
+
     }
 }
+
 ::-webkit-scrollbar {
     width: 4px;
     // height: 4px;
@@ -186,7 +197,7 @@
     }
 
     & .sec1 {
-        box-shadow: 0px 0px 2px 1px rgba(73, 72, 72, 0.664);
+        box-shadow: 3px 3px 6px 0px rgba(168, 168, 168, 0.562);
         line-height: 40px;
         border-radius: 10px;
         margin-bottom: 10px;

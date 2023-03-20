@@ -157,6 +157,7 @@ nav {
     // clip-path: polygon(3% 0, 100% 0, 100% 57%, 98% 100%, 0 100%, 0% 50%);
     z-index: 1;
 }
+
 .fordaysbtn {
     display: flex;
     // position: relative;
@@ -187,34 +188,40 @@ nav {
     color: #999999;
     padding-top: 10px;
 }
+
 .active button {
     color: whitesmoke;
 }
+
 .active {
     // border: 3px solid black;
     position: relative;
     z-index: 1;
-    box-shadow: inset -1px -6px 14px -10px rgb(0, 0, 0, 0.63),5px -3px rgba(0, 0, 0, 0.11) ;
+    box-shadow: inset -1px -6px 14px -10px rgb(0, 0, 0, 0.63), 5px -3px rgba(0, 0, 0, 0.11);
     background-image: linear-gradient(to top, #f34432, #f78d4d);
     // padding: 12px 0px;
-    
+
 }
+
 .adays {
     display: flex;
     justify-content: center;
     border-bottom: 2px solid #ededed;
 }
+
 .forw {
     transform: skew(-30deg);
     width: 14.29%;
     // margin-right: 15px;
 
 }
+
 .forbtnoutline {
     padding-left: -5px;
     height: 40px;
     border-bottom: 2px solid #ee4931;
 }
+
 .mon {
     // border-bottom: 2px solid black;
     // margin: 0%;
@@ -222,6 +229,7 @@ nav {
     background: transparent;
     border: none;
 }
+
 .forspace {
     height: 5vh;
     width: 100%;
@@ -229,6 +237,7 @@ nav {
     border-bottom: 2px solid #ededed;
     margin: 0%;
 }
+
 .table {
     height: 800px;
     display: flex;
@@ -236,26 +245,36 @@ nav {
     align-items: center;
     background-color: #f0f0f0;
 }
+
 .tsub1 {
     text-align: center;
     width: 100%;
+    overflow: auto;
 }
+
+.tsub1 table tr th {
+    width: 12.4%;
+}
+
 .tsub {
     text-align: center;
     height: 500px !important;
     overflow: scroll;
-    
+
 }
-.tsub table{
-    width: 1200px !important;
+
+.tsub table {
+    width: 100% !important;
     overflow-x: scroll;
 
 }
-.tsubtd{
+
+.tsubtd {
     // width: calc(100vw - 50px)
-    width: 50px;
+    width: 12.5%;
 
 }
+
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -263,20 +282,24 @@ nav {
     margin: 0%;
     padding: 0%;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #c2c2c2;
     border-radius: 15px;
 }
+
 .tsub1 table {
     width: 100%;
 }
+
 .fw {
-    width: 10%;
+    width: 12.4%;
 }
+
 .poly {
     color: white;
     clip-path: polygon(3% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 20%);
-    box-shadow: inset 3px -3px 11px -4px  rgb(0, 0, 0, 0.63);
+    box-shadow: inset 3px -3px 11px -4px rgb(0, 0, 0, 0.63);
     background-image: linear-gradient(to right, #f34432, #f78d4d);
 }
 
@@ -292,7 +315,7 @@ nav {
 
 
 .tbc {
-    width: 10%;
+    width: 15%;
     // height: 40px;
     background-color: #f8f8f8;
     // border: 1px solid black;
@@ -301,6 +324,7 @@ nav {
     left: 0%;
     // bottom: 0%;
     z-index: 2;
+    border: 1px solid rgba(92, 80, 80, 0.397);
 
 }
 
@@ -320,6 +344,7 @@ footer {
     font-size: 20px;
     padding-top: 10px;
 }
+
 .f1 {
     text-align: right;
     padding: 10px;
@@ -330,6 +355,30 @@ footer {
     border-left: 3px solid white;
 }
 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    // border: 1px solid black;
+    box-shadow: 3px 3px 5px 3px rgba(173, 173, 173, 0.767);
+    padding: 10px;
+    height: 70vh;
+    width: 25%;
+    z-index: 100;
+    // background:black ;
+}
+.dark-modal .modal-content {
+    background-color: #292b2c;
+    color: white;
+}
+.dark-modal .close {
+    color: white;
+}
+.light-blue-backdrop {
+    background-color: #5cb3fd;
+}
 @media only screen and (max-width:2697px) {
     * {
 
@@ -347,7 +396,8 @@ footer {
     .outside {
         height: 100px;
     }
-    .flogo img{
+
+    .flogo img {
         width: 20%;
     }
 
@@ -358,6 +408,7 @@ footer {
 
         font-size: 1rem;
     }
+
     .forimage {
 
         width: 35px;
@@ -369,7 +420,8 @@ footer {
     .outside {
         height: 70px;
     }
-    .flogo img{
+
+    .flogo img {
         width: 20%;
     }
 }
@@ -392,13 +444,15 @@ footer {
     .outside {
         height: 60px;
     }
-    .medium2{
+
+    .medium2 {
         padding: 10px 10px;
     }
-    .medium2 a{
+
+    .medium2 a {
         font-size: 12px;
     }
-    
+
 
 }
 
@@ -411,110 +465,134 @@ footer {
 
 
     }
+
     nav {
         width: 100%;
-        
-    
+
+
     }
+
     .imag {
         width: 20%;
         padding: 10px 0px;
-        padding-left: 4px;   
+        padding-left: 4px;
     }
-    .mid{
+
+    .mid {
         width: 50%;
         font-size: 10px;
     }
-    .last1{
+
+    .last1 {
         width: 30%;
     }
-    .lastbtn{
+
+    .lastbtn {
         margin: 0%;
         padding: 0%;
         font-size: 10px;
     }
-    .medium1{
+
+    .medium1 {
         width: 100%;
     }
-    .medium1btn{
+
+    .medium1btn {
         margin: 20px 0px;
-        font-size:10px ;
+        font-size: 10px;
         padding: 5px 40px;
     }
+
     .medactive {
         padding: 6px 41px;
     }
-    .medium2{
+
+    .medium2 {
         padding: 5px 10px;
     }
-    .medium2 a{
+
+    .medium2 a {
         font-size: 10px;
     }
+
     .outside {
         height: 60px;
     }
-    .mon{
+
+    .mon {
         font-size: 10px;
     }
-    .forcalen i{
+
+    .forcalen i {
         font-size: 12px;
     }
+
     .icon {
         // font-size: 1.5rem;
         border: 1px solid black;
         border-radius: 3px;
         padding: 1px 3px;
     }
-    .forcalen{
+
+    .forcalen {
         margin-bottom: 15px;
     }
+
     .fw {
         // position: relative;
         // margin: 10px 0px;
         width: 5%;
         // font-size: 12px;
     }
+
     .tsub table tr td {
         font-size: 12px;
-    
+
     }
-    .tsub1 table tr th{
+
+    .tsub1 table tr th {
         font-size: 10px;
     }
+
     .tbc {
         width: 5%;
-        
+
     }
+
     footer {
         width: 100%;
         // display: flex;
         // align-items: center;
         // justify-content: center;
     }
+
     .flogo {
         text-align: center;
         width: 100%;
         padding-top: 5px;
     }
-    .flogo img{
+
+    .flogo img {
         width: 30%;
     }
-    .footer{
+
+    .footer {
         width: 100%;
     }
+
     .f1 {
         padding: 5px;
         width: 30%;
         font-size: 10px;
     }
-    
+
     .f2 {
         padding: 5px;
         font-size: 10px;
         width: 40%;
-        
+
     }
-    
+
 }
 
 // @media only screen and (min-width:900px) {

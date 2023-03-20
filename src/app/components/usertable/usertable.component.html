@@ -91,7 +91,6 @@
                 </div>
                 <div class="tsub1 poly">
                     <table>
-    
                         <tr>
                             <th class="fw">
                                 Sports
@@ -105,6 +104,7 @@
                             <th>
                                 Tenis
                             </th>
+                            
                         </tr>
                         <tr>
                             <th>
@@ -119,6 +119,7 @@
                             <th>
                                 Teren 1-Vanjski
                             </th>
+                            
                         </tr>
                     </table>
                 </div>
@@ -126,7 +127,19 @@
                     <table>
                         <tr>
                             <td class="tbc">
-                                8:00
+                                8:00 to 8:30
+                            </td>
+                            <td class="tsubtd" (click)="open(myModal)"  contenteditable>
+                            </td>
+                            <td class="tsubtd"  contenteditable>
+                            </td>
+                            <td class="tsubtd"  contenteditable>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tbc">
+                                8:30 to 9:00
                             </td>
                             <td class="tsubtd">
                             </td>
@@ -139,158 +152,25 @@
                         </tr>
                         <tr>
                             <td class="tbc">
-                                8:00
+                                9:00 to 9:30
                             </td>
-                            <td>
-    
+                            <td class="tsubtd">
                             </td>
-                            <td>
-    
+                            <td class="tsubtd">
                             </td>
-                            <td>
-    
+                            <td class="tsubtd">
                             </td>
                             
-
                         </tr>
                         <tr>
                             <td class="tbc">
-                                8:00
+                                9:30 to 10:00
                             </td>
-                            <td>
-    
+                            <td class="tsubtd">
                             </td>
-                            <td>
-    
+                            <td class="tsubtd">
                             </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tbc">
-                                8:00
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
-                            </td>
-                            <td>
-    
+                            <td class="tsubtd">
                             </td>
                         </tr>
                     </table>
@@ -299,6 +179,20 @@
         </div>
     </div>
 </div>
+<ng-template #myModal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Modal title</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Modal body text goes here.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    </div>
+  </ng-template>
 <footer>
     <div class="flogo">
         <img src="../../../assets/1.jpg" alt="logo">
