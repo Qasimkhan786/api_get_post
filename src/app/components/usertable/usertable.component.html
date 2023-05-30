@@ -13,7 +13,8 @@
                 <div class="row margin-0">
                     <div class="col">
                         <div ngbDropdown class="d-inline-block">
-                            <button type="button" class="lastbtn btn btn-primary forpad" id="dropdownBasic1" ngbDropdownToggle>
+                            <button type="button" class="lastbtn btn btn-primary forpad" id="dropdownBasic1"
+                                ngbDropdownToggle>
                                 Talha Idrees
                             </button>
                             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
@@ -40,15 +41,15 @@
     <div class="container">
         <div class="medium2">
             <a href="#">view full calender</a>
-    
+
         </div>
         <div class="fordays row margin-0">
             <div class="outside col-md-12">
-                
+
                 <div class="fordaysbtn">
                     <div [ngClass]="mon?fordaysactive:''" class="forbtn">
-                        <button class="mon" (click)="fordaysbtn('mon')" >Mon<p>2.6</p></button>
-                        
+                        <button class="mon" (click)="fordaysbtn('mon')">Mon<p>2.6</p></button>
+
                     </div>
                     <div [ngClass]="tue?fordaysactive:''" class="forbtn">
                         <button class="mon" (click)="fordaysbtn('tue')">Tues <p>2.6</p></button>
@@ -81,7 +82,7 @@
             <div [ngClass]="sun?boutline:''" class="forw"></div>
         </div>
         <div class="forspace">
-    
+
         </div>
         <div class="table row margin-0 ">
             <div class="col-md-12">
@@ -104,7 +105,7 @@
                             <th>
                                 Tenis
                             </th>
-                            
+
                         </tr>
                         <tr>
                             <th>
@@ -119,7 +120,7 @@
                             <th>
                                 Teren 1-Vanjski
                             </th>
-                            
+
                         </tr>
                     </table>
                 </div>
@@ -129,12 +130,13 @@
                             <td class="tbc">
                                 8:00 to 8:30
                             </td>
-                            <td class="tsubtd" (click)="open(myModal)"  contenteditable>
+                            <td class="tsubtd" (click)="openScrollableContent(longContent,'tennis')" contenteditable>
+                                {{name}}
                             </td>
-                            <td class="tsubtd"  contenteditable>
+                            <td class="tsubtd" contenteditable>
                             </td>
-                            <td class="tsubtd"  contenteditable>
-    
+                            <td class="tsubtd" contenteditable>
+
                             </td>
                         </tr>
                         <tr>
@@ -146,9 +148,9 @@
                             <td class="tsubtd">
                             </td>
                             <td class="tsubtd">
-    
+
                             </td>
-                            
+
                         </tr>
                         <tr>
                             <td class="tbc">
@@ -160,7 +162,7 @@
                             </td>
                             <td class="tsubtd">
                             </td>
-                            
+
                         </tr>
                         <tr>
                             <td class="tbc">
@@ -179,20 +181,26 @@
         </div>
     </div>
 </div>
-<ng-template #myModal let-modal>
+<ng-template #longContent let-modal>
     <div class="modal-header">
-      <h4 class="modal-title">Modal title</h4>
-      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
+        <h4 class="modal-title">Select date and time</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">x</button>
     </div>
     <div class="modal-body">
-      <p>Modal body text goes here.</p>
+        <form [formGroup]="temp">
+            <label for="email">Name</label>
+            <br />
+            <input type="text" class="form-control" name="" id="email" formControlName="username">
+            <br />
+            <ejs-calendar id=calendar [value]='value' [min]='minDate' [max]='maxDate' > </ejs-calendar >
+            <button class="fbtn btn btn-primary" (click)="modal.close('Close click')" (click)="submit()">Login</button>
+        </form>
+
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
     </div>
-  </ng-template>
+</ng-template>
 <footer>
     <div class="flogo">
         <img src="../../../assets/1.jpg" alt="logo">

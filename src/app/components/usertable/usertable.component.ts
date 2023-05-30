@@ -16,14 +16,19 @@ export class UsertableComponent implements OnInit {
   ngOnInit(): void {
   }
   temp = this.fb.group({
-    username: [{ value: '', disabled: false }, Validators.required],
+    username: [{ value:"", disabled: false }, Validators.required],
   });
+
+  name:string="qasim";
   btnd = 'medium1btn';
   btnda = "medium1btn medactive";
   outline = "foroutline"
   boutline = "forbtnoutline";
   val = true;
   fordaysactive = "active";
+  public minDate: Date = new Date ("05/07/2023");
+  public maxDate: Date = new Date ("08/27/2023");
+  public value: Date = new Date ("05/16/2023");
   // val1=false;
   component1() {
     if (this.val) {
@@ -119,16 +124,15 @@ export class UsertableComponent implements OnInit {
   // closePopup() {
   //   this.isPopupOpen = false;
   // }
-  // openScrollableContent(longContent: any, value: any) {
-  //   this.modalService.open(longContent, { scrollable: true });
-  //   console.log(this.mon)
-  // }
-  open(content:any) {
-    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
-      console.log(`Closed with result: ${result}`);
-    }, (reason) => {
-      console.log(`Dismissed with reason: ${reason}`);
-    });
+  openScrollableContent(longContent: any, value: any) {
+    this.modalService.open(longContent, { scrollable: true });
+    console.log(this.mon)
+    
+
+  }
+  submit(){
+    console.log(this.temp.value)
+    // this.name = this.temp.controls['username'].value;
   }
 //   zIndex = 1040 + (10 * ('.modal:visible').length);
 // css('z-index', zIndex);

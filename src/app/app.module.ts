@@ -20,7 +20,10 @@ import { AccountsComponent } from './components/accounts/accounts.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { MakepayComponent } from './components/makepay/makepay.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+// import { AisiComponent } from './components/aisi/aisi.component';
 // import { MatButtonModule } from '@angular/material/button'
+// import { WebSocket } from 'websocket';
 
 
 @NgModule({
@@ -38,6 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AccountsComponent,
     CardsComponent,
     MakepayComponent,
+    // AisiComponent,
     
 
 
@@ -50,7 +54,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgbDropdownModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CalendarModule 
     
   ],
   providers: [],
